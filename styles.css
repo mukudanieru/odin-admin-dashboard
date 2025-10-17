@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+:root {
+    /* Light Mode */
+    --primary-color: #fafafa;
+    --secondary-color: #0a0a0a;
+    --tertiary-color: #6b7280;
+    --muted-color: 215, 215, 223;
+    --muted-foreground: #737373;
+    --accent-color: #f5f5f5;
+    --border: #e5e5e5;
+    --destructive-color: #e7000b;
+    --primary-font: "Geist";
+    --logo-font: "norse-bold";
+}
+
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* line-height: 0; */
+}
+
+body {
+    font-family: var(--primary-font);
+
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: grid;
+    grid-template-columns: 250px 2fr;
+    grid-template-rows: 65px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content";
+}
+
+.dashboard-header {
+    grid-area: header;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.dashboard-sidebar {
+    grid-area: sidebar;
+    background-color: var(--accent-color);
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebar-header {
+    flex: 0;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    height: auto;
+    width: auto;
+    line-height: 0;
+    border: none;
+    background: none;
+    padding: 8px;
+    border-radius: 9px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: rgba(var(--muted-color), 0.5);
+    cursor: pointer;
+}
+
+svg {
+    display: block;
+    height: 18px;
+    width: 18px;
+}
+
+.sidebar-content {
+    border: 1px solid black;
+    flex: auto;
+}
+
+.sidebar-footer {
+    border: 1px solid black;
+    flex: 0;
+}
+
+.dashboard-content {
+    grid-area: content;
+    border-left: 1px solid var(--border);
+}
