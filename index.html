@@ -7,6 +7,16 @@
         <title>Odin</title>
     </head>
     <body>
+        <div class="mobile-display">
+            You are currently using a mobile device. This feature is not
+            available on mobile yet.
+        </div>
+
+        <div class="tablet-display">
+            You are currently using a tablet. This feature is not available on
+            tablets yet.
+        </div>
+
         <header class="dashboard-header">Dashboard</header>
 
         <aside class="dashboard-sidebar">
@@ -59,7 +69,230 @@
                 </button>
             </header>
 
-            <main class="sidebar-content">Main</main>
+            <main class="sidebar-content">
+                <div class="menu-section">
+                    <ul class="menu-list">
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-house-icon lucide-house"
+                                >
+                                    <path
+                                        d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+                                    />
+                                    <path
+                                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                                    />
+                                </svg>
+                                Home
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-user-icon lucide-user"
+                                >
+                                    <path
+                                        d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                                    />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                                Profile
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-messages-square-icon lucide-messages-square"
+                                >
+                                    <path
+                                        d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+                                    />
+                                    <path
+                                        d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"
+                                    />
+                                </svg>
+                                Messages
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-history-icon lucide-history"
+                                >
+                                    <path
+                                        d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+                                    />
+                                    <path d="M3 3v5h5" />
+                                    <path d="M12 7v5l4 2" />
+                                </svg>
+                                History
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-list-todo-icon lucide-list-todo"
+                                >
+                                    <path d="M13 5h8" />
+                                    <path d="M13 12h8" />
+                                    <path d="M13 19h8" />
+                                    <path d="m3 17 2 2 4-4" />
+                                    <rect
+                                        x="3"
+                                        y="4"
+                                        width="6"
+                                        height="6"
+                                        rx="1"
+                                    />
+                                </svg>
+                                Tasks
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users-icon lucide-users"
+                                >
+                                    <path
+                                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                                    />
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <circle cx="9" cy="7" r="4" />
+                                </svg>
+                                Communites
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="settings-section">
+                    <ul class="settings-list">
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-settings-icon lucide-settings"
+                                >
+                                    <path
+                                        d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                                    />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Settings
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-message-circle-question-mark-icon lucide-message-circle-question-mark"
+                                >
+                                    <path
+                                        d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
+                                    />
+                                    <path
+                                        d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                    />
+                                    <path d="M12 17h.01" />
+                                </svg>
+                                Support
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="btn sidebar-btn">
+                                <svg
+                                    class="sidebar-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-shield-check-icon lucide-shield-check"
+                                >
+                                    <path
+                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                                    />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                Privacy
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </main>
 
             <footer class="sidebar-footer">
                 <button class="btn profile-container" id="profile">
